@@ -1,4 +1,4 @@
-package exercise.ShoppingCart.typeAndRate;
+package exercise.typeAndRate;
 
 public interface TaxRate {
     public double getValue();

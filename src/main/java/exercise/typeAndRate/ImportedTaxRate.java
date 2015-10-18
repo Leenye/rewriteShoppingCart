@@ -1,4 +1,4 @@
-package exercise.ShoppingCart.typeAndRate;
+package exercise.typeAndRate;
 
 public class ImportedTaxRate implements TaxRate {
     private double domesticRate;

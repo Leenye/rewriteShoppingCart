@@ -1,4 +1,4 @@
-package exercise.ShoppingCart.typeAndRate;
+package exercise.typeAndRate;
 
 public enum ProductType {
     DOMESTIC_TAXABLE, DOMESTIC_EXEMPT, IMPORTED_TAXABLE, IMPORTED_EXEMPT;
