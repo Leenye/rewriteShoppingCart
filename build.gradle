@@ -1,0 +1,20 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+
+}
+
+def taskGroup = 'myTask'
+
+task run(type: JavaExec, group: taskGroup){
+    main = ''
+    classpath = configurations.compile + sourceSets.main.output
+}
