@@ -1,4 +1,4 @@
-package exercise.ShoppingCart.productDetail;
+package exercise.productDetail;
 
 public class ActualDetail implements ProductDetail {
     @Override

@@ -1,9 +1,11 @@
 package exercise.parseFile;
 
+import exercise.ShoppingCart.typeAndRate.ProductType;
+
 import exercise.ShoppingCart.Cart;
 import exercise.ShoppingCart.CartItem;
 import exercise.ShoppingCart.Product;
-import exercise.ShoppingCart.productDetail.ShelfDetail;
+import exercise.productDetail.ShelfDetail;
 import exercise.ShoppingCart.typeAndRate.ProductType;
 import org.junit.After;
 import org.junit.Before;

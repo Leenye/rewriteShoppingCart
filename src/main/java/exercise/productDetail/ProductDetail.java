@@ -1,6 +1,4 @@
-package exercise.ShoppingCart.productDetail;
-
-import exercise.ShoppingCart.Product;
+package exercise.productDetail;
 
 public interface ProductDetail {
     public double getPrice();

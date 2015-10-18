@@ -1,6 +1,6 @@
 package exercise.ShoppingCart;
 
-import exercise.ShoppingCart.productDetail.ShelfDetail;
+import exercise.productDetail.ShelfDetail;
 import exercise.ShoppingCart.typeAndRate.ProductType;
 
 public class Product {

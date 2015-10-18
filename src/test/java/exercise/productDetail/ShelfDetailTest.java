@@ -1,4 +1,4 @@
-package exercise.ShoppingCart.productDetail;
+package exercise.productDetail;
 
 import exercise.ShoppingCart.typeAndRate.ProductType;
 import junit.framework.TestCase;

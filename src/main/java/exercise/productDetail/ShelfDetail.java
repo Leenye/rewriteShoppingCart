@@ -1,6 +1,5 @@
-package exercise.ShoppingCart.productDetail;
+package exercise.productDetail;
 
-import exercise.ShoppingCart.Product;
 import exercise.ShoppingCart.typeAndRate.ProductType;
 import exercise.ShoppingCart.typeAndRate.TaxRateFactory;
 import exercise.helper.MoneyFormatHelper;
