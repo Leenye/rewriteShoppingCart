@@ -58,7 +58,7 @@ public class ActualDetail implements ProductDetail {
 
     @Override
     public double getTaxRate() {
-        double promotedTaxRate = promotionImp.setPromotion(shelfDetail,this).getTaxRate();
+        double promotedTaxRate = halfImportedTaxRatePromotion.setPromotion(shelfDetail);
         return promotedTaxRate  == 0 ? taxRate : promotedTaxRate;
     }
 

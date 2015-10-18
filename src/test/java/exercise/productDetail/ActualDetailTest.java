@@ -1,6 +1,5 @@
 package exercise.productDetail;
 
-import exercise.promotion.PromotionImp;
 import exercise.typeAndRate.ProductType;
 import junit.framework.TestCase;
 import org.junit.Before;
@@ -12,7 +11,6 @@ public class ActualDetailTest extends TestCase {
 
     private ActualDetail actualDetail;
     private ShelfDetail shelfDetail;
-    private PromotionImp promotionImp;
 
     @Before
     public void setUp() {
@@ -21,7 +19,7 @@ public class ActualDetailTest extends TestCase {
     }
 
     public void testGetPrice() throws Exception {
-        assertThat(actualDetail.getTaxRate(), is(0.15));
+        assertThat(actualDetail.getTaxRate(), is(0.125));
     }
 
     public void testGetTaxRate() throws Exception {

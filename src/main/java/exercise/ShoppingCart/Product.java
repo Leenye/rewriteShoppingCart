@@ -2,7 +2,6 @@ package exercise.ShoppingCart;
 
 import exercise.productDetail.ActualDetail;
 import exercise.productDetail.ShelfDetail;
-import exercise.promotion.PromotionImp;
 import exercise.typeAndRate.ProductType;
 
 public class Product {
@@ -13,7 +12,6 @@ public class Product {
     private ProductType productType;
     private ShelfDetail shelfDetail;
     private ActualDetail actualDetail;
-    private PromotionImp promotionImp = new PromotionImp();
 
     public String getName() {
         return name;
