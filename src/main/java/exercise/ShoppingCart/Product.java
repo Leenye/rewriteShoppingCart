@@ -1,20 +1,19 @@
 package exercise.ShoppingCart;
 
+import exercise.productDetail.ActualDetail;
 import exercise.productDetail.ShelfDetail;
-import exercise.ShoppingCart.typeAndRate.ProductType;
+import exercise.promotion.PromotionImp;
+import exercise.typeAndRate.ProductType;
 
 public class Product {
     private String name;
     private String date;
     private String store;
+
     private ProductType productType;
-
     private ShelfDetail shelfDetail;
-
-//    private double shelfPrice;
-//    private double soldPrice;
-//    private double taxRate;
-//    private double tax;
+    private ActualDetail actualDetail;
+    private PromotionImp promotionImp = new PromotionImp();
 
     public String getName() {
         return name;
@@ -34,6 +33,10 @@ public class Product {
 
     public ShelfDetail getShelfDetail() {
         return shelfDetail;
+    }
+
+    public ActualDetail getActualDetail() {
+        return actualDetail;
     }
 
     public void setStore(String store) {

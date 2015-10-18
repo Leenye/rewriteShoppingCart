@@ -1,7 +1,7 @@
 package exercise.productDetail;
 
-import exercise.ShoppingCart.typeAndRate.ProductType;
-import exercise.ShoppingCart.typeAndRate.TaxRateFactory;
+import exercise.typeAndRate.ProductType;
+import exercise.typeAndRate.ShelfTaxRateFactory;
 import exercise.helper.MoneyFormatHelper;
 
 public class ShelfDetail implements ProductDetail {
@@ -17,16 +17,16 @@ public class ShelfDetail implements ProductDetail {
         this.cost = calculateCost();
     }
 
-    private double getTaxRateByType(ProductType productType){
-        return  new TaxRateFactory().getTaxRate(productType);
+    private double getTaxRateByType(ProductType productType) {
+        return new ShelfTaxRateFactory().getTaxRate(productType);
     }
 
-    private double calculateTax(){
-        return MoneyFormatHelper.round(taxRate*price);
+    private double calculateTax() {
+        return MoneyFormatHelper.round(taxRate * price);
     }
 
-    private double calculateCost(){
-        return price+tax;
+    private double calculateCost() {
+        return price + tax;
     }
 
     @Override

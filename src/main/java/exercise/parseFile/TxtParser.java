@@ -4,7 +4,7 @@ import exercise.ShoppingCart.Cart;
 import exercise.ShoppingCart.CartItem;
 import exercise.ShoppingCart.Product;
 import exercise.productDetail.ShelfDetail;
-import exercise.ShoppingCart.typeAndRate.ProductType;
+import exercise.typeAndRate.ProductType;
 
 import java.io.IOException;
 import java.nio.file.Files;

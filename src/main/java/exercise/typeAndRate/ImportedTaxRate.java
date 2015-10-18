@@ -1,24 +1,15 @@
 package exercise.typeAndRate;
 
 public class ImportedTaxRate implements TaxRate {
-    private double domesticRate;
     private double importedRate;
 
-    public ImportedTaxRate(double domesticRate, double importedRate) {
-        this.domesticRate = domesticRate;
+    public ImportedTaxRate( double importedRate) {
         this.importedRate = importedRate;
     }
 
-    public double getDomesticRate() {
-        return domesticRate;
-    }
 
     public double getImportedRate() {
         return importedRate;
-    }
-
-    public void setDomesticRate(double domesticRate) {
-        this.domesticRate = domesticRate;
     }
 
     public void setImportedRate(double importedRate) {
@@ -26,6 +17,6 @@ public class ImportedTaxRate implements TaxRate {
     }
 
     public double getValue(){
-        return domesticRate+importedRate;
+        return importedRate;
     }
 }
