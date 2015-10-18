@@ -9,16 +9,22 @@ public class ShelfDetail implements ProductDetail {
     private double taxRate;
     private double tax;
     private double cost;
+    private ProductType productType;
 
     public ShelfDetail(double price, ProductType productType) {
         this.price = price;
         this.taxRate = getTaxRateByType(productType);
         this.tax = calculateTax();
         this.cost = calculateCost();
+        this.productType = productType;
     }
 
     private double getTaxRateByType(ProductType productType) {
         return new ShelfTaxRateFactory().getTaxRate(productType);
+    }
+
+    public ProductType getProductType() {
+        return productType;
     }
 
     private double calculateTax() {

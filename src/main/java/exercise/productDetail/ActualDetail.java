@@ -1,6 +1,7 @@
 package exercise.productDetail;
 
-import exercise.promotion.PromotionImp;
+import exercise.promotion.HalfImportedTaxRatePromotion;
+import exercise.promotion.HalfPricePromotion;
 import exercise.typeAndRate.ProductType;
 
 public class ActualDetail implements ProductDetail {
@@ -11,7 +12,9 @@ public class ActualDetail implements ProductDetail {
     private ProductType productType;
     private ShelfDetail shelfDetail;
 
-    private PromotionImp promotionImp = new PromotionImp();
+    HalfImportedTaxRatePromotion halfImportedTaxRatePromotion = new HalfImportedTaxRatePromotion();
+    HalfPricePromotion halfPricePromotion = new HalfPricePromotion();
+
 
     public ActualDetail(ProductType productType,ShelfDetail shelfDetail) {
         this.productType = productType;
@@ -49,7 +52,7 @@ public class ActualDetail implements ProductDetail {
 
     @Override
     public double getPrice() {
-        double promotedPrice = promotionImp.setPromotion(shelfDetail,this).getPrice();
+        double promotedPrice = halfPricePromotion.setPromotion(shelfDetail);
         return promotedPrice == 0 ? price : promotedPrice;
     }
 

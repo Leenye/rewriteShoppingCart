@@ -4,5 +4,5 @@ import exercise.productDetail.ActualDetail;
 import exercise.productDetail.ShelfDetail;
 
 public interface Promotion {
-    public ActualDetail setPromotion( ShelfDetail shelfDetail, ActualDetail actualDetail);
+    public double setPromotion( ShelfDetail shelfDetail);
 }
